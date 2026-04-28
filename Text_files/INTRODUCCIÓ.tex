@@ -5,7 +5,12 @@ Per posar signes matematics a les sections o subsections:
 \section{Some title with \texorpdfstring{$\mu$}{μ} and \texorpdfstring{$\sigma$}{σ}}
 
 Command per a compilar:
-latexmk main.tex
+\begin{verbatim}
+    latexmk main.tex
+\end{verbatim}
+
 
 Command per a que es compili sol cada cop que guardo un fitxer:
-latexmk -pvc main.tex
+\begin{verbatim}
+    latexmk -pvc main.tex
+\end{verbatim}
