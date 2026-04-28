@@ -1,0 +1,11 @@
+\section{Introducció}
+Text de prova\cite{Prova}
+
+Per posar signes matematics a les sections o subsections:
+\section{Some title with \texorpdfstring{$\mu$}{μ} and \texorpdfstring{$\sigma$}{σ}}
+
+Command per a compilar:
+latexmk main.tex
+
+Command per a que es compili sol cada cop que guardo un fitxer:
+latexmk -pvc main.tex
