@@ -14,3 +14,30 @@ Command per a que es compili sol cada cop que guardo un fitxer:
 \begin{verbatim}
     latexmk -pvc main.tex
 \end{verbatim}
+
+\section{Per escriure codi amb minted}
+Minted et fa el syntax highlighting
+
+\begin{minted}{python}
+import numpy as np
+
+for i in range(10):
+    pass
+
+a = np.sum()
+
+\end{minted}
+
+\begin{minted}{C++}
+#include <iostream>
+#include <raylib.h>
+
+#define WIDTH 900
+
+void init(int h){
+    InitWindow(WIDTH, h, "Window Title");
+}
+
+int main(){std::cout << "HW!\n";}
+
+\end{minted}
