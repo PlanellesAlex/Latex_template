@@ -41,3 +41,47 @@ void init(int h){
 int main(){std::cout << "HW!\n";}
 
 \end{minted}
+
+
+Per fer dues figures en el lloc d'una es fa:
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{path_to_figure}
+        \caption{one figure}
+        \label{fig:first}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{path_to_another_figure}
+        \caption{Another figure}
+        \label{fig:second}
+    \end{subfigure}
+
+    \caption{Comparison of the two figures.}
+    \label{fig:combined}
+\end{figure}
+
+I si es volen verticals es fa: (simplement posant que ocupin la totalitat de l'amplada de la pàgina amb \\textwidth)
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{path_to_one_figure}
+        \caption{First figure}
+    \end{subfigure}
+
+    \vspace{0.5cm}
+
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{path_to_another_figure}
+        \caption{Second figure}
+    \end{subfigure}
+
+    \caption{Two vertically stacked figures.}
+\end{figure}
